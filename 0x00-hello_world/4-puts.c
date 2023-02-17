@@ -1,8 +1,10 @@
 #include <stdio.h>
-/*This is my first task in C programming
+/*
+ * This is my first task in C programming
  *This task is to write a C program that prints exactly
  *'Programming is like builking a multilingual puzzle'
- *Using the pust() function.
+ *Main() is my main program
+ *Using the puts() function.
  *The return value is 0
  */
 
