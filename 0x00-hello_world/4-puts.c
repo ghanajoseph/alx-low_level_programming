@@ -1,11 +1,8 @@
 #include <stdio.h>
+
 /*
- * This is my first task in C programming
- * This task is to write a C program that prints exactly
- * 'Programming is like builking a multilingual puzzle'
- * main - print a line of code using puts.
- * Using the puts() function.
- * The return value is 0
+ * main - This program prints a line using the puts function
+ * Return - 0(Successful)
  */
 
 int main(void)
