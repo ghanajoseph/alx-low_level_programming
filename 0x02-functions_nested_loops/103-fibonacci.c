@@ -8,15 +8,15 @@
 int main(void)
 {
 	int i = 0;
-	long a = 1, b = 2, tot = b;
+	long j = 1, k = 2, tot = k;
 
-	while (b + a < 4000000)
+	while (k + j < 4000000)
 	{
-		b += a;
-		if (b % 2 == 0)
+		k += j;
+		if (k % 2 == 0)
 		{
-			tot += b;
-			a = b - a;
+			tot += k;
+			j = k - j;
 			++i;
 		}
 	}
