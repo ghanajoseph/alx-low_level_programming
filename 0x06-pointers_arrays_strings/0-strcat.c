@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - Concatenate given strings
+ * _strcat - Concatenate given strings
  *
  * @dest: First string to use in the concatenation
  * @src: Second string to use in the concatenation
@@ -10,7 +10,8 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int i;
+	int j;
 
 	i = 0;
 	while (dest[i] != '\0')
