@@ -6,7 +6,7 @@
  * @src: second string value
  * @n: input value
  *
- * return: 0 (Successful)
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
