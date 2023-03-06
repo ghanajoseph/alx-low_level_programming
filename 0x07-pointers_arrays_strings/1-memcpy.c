@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _membpy - fills memory with a constant byte.
+ * _memcpy - copies memory area.
  * @dest: input
  * @src: input
  * @n: input
