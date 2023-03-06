@@ -13,6 +13,6 @@ int main(void)
 	char *t;
 
 	t = _strstr(s, f);
-	printf("%\n", t);
+	printf("%s\n", t);
 	return (0);
 }
