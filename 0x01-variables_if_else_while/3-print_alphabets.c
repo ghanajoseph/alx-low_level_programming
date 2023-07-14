@@ -10,6 +10,7 @@ int main(void)
 {
 	char chl;
 	char chu;
+
 	for (chl = 'a'; chl <= 'z'; chl++)
 	{
 		putchar(chl);
