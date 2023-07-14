@@ -11,7 +11,7 @@ int main(void)
 	int a;
 
 	/* Looping through */
-	for (a = 0; a <= 10; a++)
+	for (a = 0; a < 10; a++)
 	{
 		putchar(a + '0');
 		if (a < 9)
