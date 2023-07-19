@@ -17,12 +17,12 @@ int print_sign(int n)
 	}
 	else if (n == 0) /* Checking if n is equal to zero */
 	{
-		_putchar(' ');
+		_putchar(48);
 		return (0);
 	}
 	else /* Otherwise print the negative sign */
 	{
 		_putchar('-');
-		return (-1);
 	}
+	return (-1);
 }
