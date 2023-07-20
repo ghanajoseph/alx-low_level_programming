@@ -10,7 +10,7 @@ int main(void)
 {
 	/* Initialization of variables for the program */
 	int i = 0;
-	int x = 1, y = 2;
+	long int x = 1, y = 2;
 
 	/* Looping through the numbers */
 	while (i < 50)
