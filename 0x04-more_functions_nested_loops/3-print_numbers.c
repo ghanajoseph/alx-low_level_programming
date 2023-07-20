@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
   * print_numbers - A C function prints numbers
@@ -13,7 +12,7 @@ void print_numbers(void)
 	int i;
 
 	/* Loop through the number */
-	for (i = 0; i <= 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		_putchar(i + '0');
 	}
