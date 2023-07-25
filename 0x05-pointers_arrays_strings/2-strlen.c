@@ -3,9 +3,8 @@
 
 /**
   * _strlen - A C function gets the length of string
-  *
   * @str: String pointer parameter to get length for
-  * Return: Returns length of string
+  * @return: Returns length of string
   */
 
 int _strlen(char *s)
