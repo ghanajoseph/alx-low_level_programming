@@ -13,7 +13,7 @@ int op_mod(int a, int b);
   *
   * Return: Returns the sum of both numbers
   */
-int op_add(int a, int b);
+int op_add(int a, int b)
 {
 	return (a + b);
 }
