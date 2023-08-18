@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 					printf("%s%d", sep, va_arg(list, int));
 					break;
 				case 'f':
-					printf("%s%d", sep, va_arg(list, int));
+					printf("%s%f", sep, va_arg(list, double));
 					break;
 				case 's':
 					str = va_arg(list, char *);
@@ -42,7 +42,7 @@ void print_all(const char * const format, ...)
 					i++;
 					continue;
 			}
-			sep = ",";
+			sep = ", ";
 			i++;
 		}
 	}
