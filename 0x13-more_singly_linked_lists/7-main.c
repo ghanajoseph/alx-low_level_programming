@@ -25,7 +25,7 @@ int main(void)
 	print_listint(head);
 	node = get_nodeint_at_index(head, 5);
 	printf("%d\n", node->n);
-	print_listin(head);
+	print_listint(head);
 	free_listint2(&head);
 	return (0);
 }
