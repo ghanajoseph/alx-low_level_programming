@@ -11,14 +11,17 @@
 int pop_listint(listint_t **head)
 {
 	/* Declaring & Initializing variables */
-	int num = (*head)->n;
-	listint_t *temporal = *head;
+	int n_Num;
+	listint_t *temporal;
 
 	/* Checking if head pointer is NULL or not */
-	if (head == NULL)
+	if (!head || !*head)
 		return (0);
-	*head = (*head)->next;
-	free(temporal);
 
-	return (num);
+	n_Num = (*head)->n;
+	temporal = (*head)->next;
+	free(*head);
+	*head = temporal;
+
+	return (n_Num);
 }
