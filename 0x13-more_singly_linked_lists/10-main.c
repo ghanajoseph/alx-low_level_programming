@@ -24,7 +24,7 @@ int main(void)
 	print_listint(head);
 	printf("-----------------\n");
 	delete_nodeint_at_index(&head, 5);
-	printlistin(head);
+	print_listint(head);
 	printf("-----------------\n");
 	delete_nodeint_at_index(&head, 0);
 	print_listint(head);
@@ -65,3 +65,4 @@ int main(void)
 	delete_nodeint_at_index(&head, 0);
 	print_listint(head);
 	return (0);
+}
