@@ -26,3 +26,4 @@ int main(void)
 	printf("sum = %d\n", sum);
 	free_listint2(&head);
 	return (0);
+}
