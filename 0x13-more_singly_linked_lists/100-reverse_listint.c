@@ -9,7 +9,7 @@
 listint_t *reverse_listint(listint_t **head)
 {
 	/* Declaring & initializing pointers and variable */
-	listint_t *pv_NODE = NULL, *cur_NODE = *head, *next = NULL;
+	listint_t *pv_NODE = NULL, *cur_NODE = *head, *nxt_NODE = NULL;
 	/*unsigned int i;*/
 
 	/* Checking if head pointer is NULL or not */
@@ -18,10 +18,10 @@ listint_t *reverse_listint(listint_t **head)
 
 	while (cur_NODE != NULL)
 	{
-		next = cur_NODE->next;
+		nxt_NODE = cur_NODE->next;
 		cur_NODE->next = pv_NODE;
 		pv_NODE = cur_NODE;
-		cur_NODE = next;
+		cur_NODE = nxt_NODE;
 	}
 	*head = pv_NODE;
 
