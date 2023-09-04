@@ -13,32 +13,26 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	/* Declaring variables */
-	int file_Desc = open(filename, O_WRONLY | O_APPEND);
-	size_t length = 0;
-	ssize_t nlen = write(file_Desc, text_content, length);
+	int o_p, w_t, length = 0;
 
-	/* Checking if filename argument is NULL or not */
+	/* Checking if filename is NULL or not */
 	if (filename == NULL)
 		return (-1);
 
-	/* Checking if file descriptor is -1 or not */
-	if (file_Desc == -1)
-		return (-1);
-
-	/* Checking the content of file if it's NULL or not */
+	/* Cheking the content of file if it's NULL or not */
 	if (text_content != NULL)
 	{
-		while (text_content[length] != '\0')
-		{
+		for (length = 0; text_content[length];)
 			length++;
-		}
-
-		if (nlen == -1)
-		{
-			close(file_Desc);
-			return (-1);
-		}
 	}
-	close(file_Desc);
-	return (0);
+
+	o_p = open(filename, O_WRONLY | O_APPEND);
+	w_t = write(o_p, text_content, length);
+
+	if (o_p == -1 || w_t == -1)
+		return (-1);
+
+	close(o_p);
+
+	return (1);
 }
